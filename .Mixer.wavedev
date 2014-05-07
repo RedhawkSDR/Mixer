@@ -17,20 +17,7 @@
       <generatedFileCRCs crc="1150845391" file="Makefile.am"/>
     </value>
   </implSettings>
-  <implSettings key="cpp_armv7l">
-    <value outputDir="cpp_armv7l" template="redhawk.codegen.jinja.cpp.component.pull" generatorId="gov.redhawk.ide.codegen.jinja.cplusplus.CplusplusGenerator">
-      <generatedFileCRCs crc="3473467671" file="Makefile.am"/>
-      <generatedFileCRCs crc="2136277927" file="Mixer.cpp"/>
-      <generatedFileCRCs crc="2269649747" file="Mixer.h"/>
-      <generatedFileCRCs crc="2927418887" file="Mixer_base.cpp"/>
-      <generatedFileCRCs crc="3928587360" file="Mixer_base.h"/>
-      <generatedFileCRCs crc="864280150" file="build.sh"/>
-      <generatedFileCRCs crc="1709992318" file="configure.ac"/>
-      <generatedFileCRCs crc="1634876877" file="main.cpp"/>
-      <generatedFileCRCs crc="739546574" file="port_impl.cpp"/>
-      <generatedFileCRCs crc="2770744233" file="port_impl.h"/>
-      <generatedFileCRCs crc="1746641546" file="reconf"/>
-      <generatedFileCRCs crc="1942573142" file="struct_props.h"/>
-    </value>
+  <implSettings key="cpp_arm">
+    <value outputDir="cpp_arm" template="redhawk.codegen.jinja.cpp.component.pull" generatorId="gov.redhawk.ide.codegen.jinja.cplusplus.CplusplusGenerator"/>
   </implSettings>
 </codegen:WaveDevSettings>

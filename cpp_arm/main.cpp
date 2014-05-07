@@ -22,11 +22,10 @@
 #include "ossie/ossieSupport.h"
 
 #include "Mixer.h"
-
-
 int main(int argc, char* argv[])
 {
     Mixer_i* Mixer_servant;
     Resource_impl::start_component(Mixer_servant, argc, argv);
     return 0;
 }
+

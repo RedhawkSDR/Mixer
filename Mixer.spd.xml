@@ -45,7 +45,7 @@
     <processor name="x86"/>
     <processor name="x86_64"/>
   </implementation>
-  <implementation id="cpp_armv7l">
+  <implementation id="cpp_arm">
     <description>The implementation contains descriptive information about the template for a software component.</description>
     <code type="Executable">
       <localfile name="cpp_arm/Mixer"/>
