@@ -18,7 +18,6 @@
  You should have received a copy of the GNU Lesser General Public License
  along with this program.  If not, see http://www.gnu.org/licenses/.
 -->
-
 <!DOCTYPE softwarecomponent PUBLIC "-//JTRS//DTD SCA V2.2.2 SCD//EN" "softwarecomponent.dtd">
 <softwarecomponent>
   <corbaversion>2.2</corbaversion>
@@ -31,21 +30,21 @@
     <supportsinterface repid="IDL:CF/PropertySet:1.0" supportsname="PropertySet"/>
     <supportsinterface repid="IDL:CF/TestableObject:1.0" supportsname="TestableObject"/>
     <ports>
-      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat_in_data1">
-        <porttype type="data"/>
-      </provides>
-      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat_in_data2">
-        <porttype type="data"/>
-      </provides>
-      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat_in_data3">
-        <porttype type="data"/>
-      </provides>
-      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat_in_data4">
-        <porttype type="data"/>
-      </provides>
       <uses repid="IDL:BULKIO/dataFloat:1.0" usesname="dataFloat_out">
         <porttype type="data"/>
       </uses>
+      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat1_in">
+        <porttype type="data"/>
+      </provides>
+      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat2_in">
+        <porttype type="data"/>
+      </provides>
+      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat3_in">
+        <porttype type="data"/>
+      </provides>
+      <provides repid="IDL:BULKIO/dataFloat:1.0" providesname="dataFloat4_in">
+        <porttype type="data"/>
+      </provides>
     </ports>
   </componentfeatures>
   <interfaces>

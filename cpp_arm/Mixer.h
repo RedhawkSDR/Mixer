@@ -22,7 +22,6 @@
 #define MAYBEAMIXER_IMPL_H
 
 #include "Mixer_base.h"
-#include <arm_neon.h>
 
 class Mixer_i;
 
@@ -35,12 +34,8 @@ class Mixer_i : public Mixer_base
         int serviceFunction();
     private:
         std::vector<float> m_output;
-        float32x4_t m_vec1;
-        float32x4_t m_vec2;
-        float32x4_t m_vec3;
-        float32x4_t m_vec4;
+
         unsigned int m_lastSize;
-        unsigned int count;
 
         void sizeOutput(unsigned int currentSize);
 };

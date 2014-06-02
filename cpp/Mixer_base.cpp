@@ -36,28 +36,28 @@ Mixer_base::Mixer_base(const char *uuid, const char *label) :
 {
     loadProperties();
 
-    dataFloat_in_data1 = new bulkio::InFloatPort("dataFloat_in_data1");
-    addPort("dataFloat_in_data1", dataFloat_in_data1);
-    dataFloat_in_data2 = new bulkio::InFloatPort("dataFloat_in_data2");
-    addPort("dataFloat_in_data2", dataFloat_in_data2);
-    dataFloat_in_data3 = new bulkio::InFloatPort("dataFloat_in_data3");
-    addPort("dataFloat_in_data3", dataFloat_in_data3);
-    dataFloat_in_data4 = new bulkio::InFloatPort("dataFloat_in_data4");
-    addPort("dataFloat_in_data4", dataFloat_in_data4);
+    dataFloat1_in = new bulkio::InFloatPort("dataFloat1_in");
+    addPort("dataFloat1_in", dataFloat1_in);
+    dataFloat2_in = new bulkio::InFloatPort("dataFloat2_in");
+    addPort("dataFloat2_in", dataFloat2_in);
+    dataFloat3_in = new bulkio::InFloatPort("dataFloat3_in");
+    addPort("dataFloat3_in", dataFloat3_in);
+    dataFloat4_in = new bulkio::InFloatPort("dataFloat4_in");
+    addPort("dataFloat4_in", dataFloat4_in);
     dataFloat_out = new bulkio::OutFloatPort("dataFloat_out");
     addPort("dataFloat_out", dataFloat_out);
 }
 
 Mixer_base::~Mixer_base()
 {
-    delete dataFloat_in_data1;
-    dataFloat_in_data1 = 0;
-    delete dataFloat_in_data2;
-    dataFloat_in_data2 = 0;
-    delete dataFloat_in_data3;
-    dataFloat_in_data3 = 0;
-    delete dataFloat_in_data4;
-    dataFloat_in_data4 = 0;
+    delete dataFloat1_in;
+    dataFloat1_in = 0;
+    delete dataFloat2_in;
+    dataFloat2_in = 0;
+    delete dataFloat3_in;
+    dataFloat3_in = 0;
+    delete dataFloat4_in;
+    dataFloat4_in = 0;
     delete dataFloat_out;
     dataFloat_out = 0;
 }

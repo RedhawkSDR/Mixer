@@ -52,10 +52,10 @@ Mixer_i::~Mixer_i()
 int Mixer_i::serviceFunction()
 {
 	//Read in data from input ports
-    bulkio::InFloatPort::dataTransfer *inputData1 = dataFloat_in_data1->getPacket(-1);
-    bulkio::InFloatPort::dataTransfer *inputData2 = dataFloat_in_data2->getPacket(-1);
-    bulkio::InFloatPort::dataTransfer *inputData3 = dataFloat_in_data3->getPacket(-1);
-    bulkio::InFloatPort::dataTransfer *inputData4 = dataFloat_in_data4->getPacket(-1);
+    bulkio::InFloatPort::dataTransfer *inputData1 = dataFloat1_in->getPacket(-1);
+    bulkio::InFloatPort::dataTransfer *inputData2 = dataFloat2_in->getPacket(-1);
+    bulkio::InFloatPort::dataTransfer *inputData3 = dataFloat3_in->getPacket(-1);
+    bulkio::InFloatPort::dataTransfer *inputData4 = dataFloat4_in->getPacket(-1);
 
     //Check for valid data
     if (not inputData1 || not inputData2 || not inputData3 || not inputData4) {
@@ -82,15 +82,12 @@ int Mixer_i::serviceFunction()
     if (inputData1->sriChanged) {
     	dataFloat_out->pushSRI(inputData1->SRI);
     }
-
     if (inputData2->sriChanged) {
     	dataFloat_out->pushSRI(inputData2->SRI);
     }
-
     if (inputData3->sriChanged) {
     	dataFloat_out->pushSRI(inputData3->SRI);
     }
-
     if (inputData4->sriChanged) {
     	dataFloat_out->pushSRI(inputData4->SRI);
     }

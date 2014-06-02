@@ -44,10 +44,10 @@ class Mixer_base : public Resource_impl, protected ThreadedComponent
     protected:
 
         // Ports
-        bulkio::InFloatPort *dataFloat_in_data1;
-        bulkio::InFloatPort *dataFloat_in_data2;
-        bulkio::InFloatPort *dataFloat_in_data3;
-        bulkio::InFloatPort *dataFloat_in_data4;
+        bulkio::InFloatPort *dataFloat1_in;
+        bulkio::InFloatPort *dataFloat2_in;
+        bulkio::InFloatPort *dataFloat3_in;
+        bulkio::InFloatPort *dataFloat4_in;
         bulkio::OutFloatPort *dataFloat_out;
 
     private:
